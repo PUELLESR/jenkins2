@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                sh 'mkdir devops3'    
+                sh 'mkdir devops4'    
             }
         }
         stage('Deploy') { 
             steps {
-                sh 'cd devops3'
+                sh 'cd devops4'
                 sh 'pwd'
             }
         }
