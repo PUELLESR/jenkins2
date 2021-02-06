@@ -1,4 +1,3 @@
-Jenkinsfile (canalización declarativa)
 pipeline {
     agent any 
     stages {
@@ -15,6 +14,12 @@ pipeline {
         stage('Deploy') { 
             steps {
                 sh 'cd devops2'
+                sh 'pwd'
+            }
+        }
+
+        stage('Notificacion') { 
+            steps {
                 sh 'pwd'
             }
         }
